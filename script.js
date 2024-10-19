@@ -51,6 +51,7 @@ function updateValue(rangeValue){
             break;
         default:
             pageCount.textContent = 0
+            priceByMonth.textContent = `00.00`
         }
 }
 
