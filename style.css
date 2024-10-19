@@ -189,8 +189,51 @@ input:checked + .slider:before {
   transform: translateX(18px);
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.footer .access-of {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer .access-of img {
+  margin-right: 5px;
+}
+
+.footer #start {
+  max-width: 130px;
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  outline: 0;
+  border: 0;
+  background-color: #16161c;
+  color: #ccc;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.footer #start:hover {
+  background-color: #154e7c;
+  box-shadow: 0px 0px 40px #2196f3;
+  color: #e4e4e4;
+}
+
 @media (max-width: 479px) {
-  .wrapper .hero-heading{
+  .wrapper {
+    background: url(/images/pattern-circles.svg) center 200px no-repeat,
+      url('') 10% -120% no-repeat;
+  }
+  .wrapper .hero-heading {
     font-size: 20px;
   }
   .inner-wrapper .dashboard {
@@ -199,10 +242,10 @@ input:checked + .slider:before {
   .pricing-per-month #price-value {
     position: static;
   }
-  .bill-toggle-switch .toggle-message{
+  .bill-toggle-switch .toggle-message {
     font-size: 7px;
   }
-  .bill-toggle-switch p{
-    font-size: 8px; 
+  .bill-toggle-switch p {
+    font-size: 8px;
   }
 }
