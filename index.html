@@ -4,40 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Interactive pricing component</title>
-  <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+  <title>Interactive Pricing Component</title>
+  
+  <!-- Google Fonts: Manrope -->
+  <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style.css">
+  
+  <!-- JavaScript -->
   <script src="script.js" defer></script>
 </head>
 
 <body>
   <!-- Full Page Wrapper -->
   <div class="wrapper">
-    <!-- Hero Text  -->
+    
+    <!-- Hero Section -->
     <div class="text-wrapper">
       <h1 class="hero-heading">Simple, traffic-based pricing</h1>
-      <p> Sign-up for our 30-day trial. No credit card required.</p>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
     </div>
 
-    <!-- Main Component -->
+    <!-- Main Pricing Component -->
     <div class="inner-wrapper">
+      
+      <!-- Dashboard Section -->
       <div class="dashboard">
         <div class="page-view-count">
-          <span id="count"></span> <!--Value Toggled from JS-->
+          <span id="count"></span> <!-- Populated via JS -->
           Pageviews
         </div>
-        <div div class="pricing-per-month">
-          <span id="price-value">$00.00</span> <!--Value Toggled from JS-->
+        <div class="pricing-per-month">
+          <span id="price-value">$00.00</span> <!-- Populated via JS -->
           <span>/month</span>
         </div>
       </div>
 
-      <!-- Input Bar -->
+      <!-- Slider Input Bar -->
       <div class="input-bar">
-        <input type="range" min="0" max="100" value="0" class="range-input" step="20" />
+        <input type="range" min="0" max="100" value="0" class="range-input" step="20">
       </div>
+
+      <!-- Billing Toggle Switch -->
       <div class="bill-toggle-switch">
         <p>Monthly Billing</p>
         <label class="switch">
@@ -47,17 +58,30 @@
         <p>Yearly Billing</p>
         <span class="toggle-message">25% discount</span>
       </div>
+
+      <!-- Footer Section -->
       <footer class="footer">
-        <div class="access-of">
-          <span><img src="/images/icon-check.svg" alt="check">Unlimited websites</span>
-          <span><img src="/images/icon-check.svg" alt="check">100% data ownership</span>
-          <span><img src="/images/icon-check.svg" alt="check">Email reports</span>
+        <div class="access-features">
+          <span>
+            <img src="/images/icon-check.svg" alt="Check">
+            <div class="feature-text">Unlimited websites</div>
+          </span>
+          <span>
+            <img src="/images/icon-check.svg" alt="Check">
+            <div class="feature-text">100% data ownership</div>
+          </span>
+          <span>
+            <img src="/images/icon-check.svg" alt="Check">
+            <div class="feature-text">Email reports</div>
+          </span>
         </div>
         <button id="start">Start my trial</button>
       </footer>
-    </div>
-  </div>
-</body>
 
+    </div> <!-- End of Inner Wrapper -->
+    
+  </div> <!-- End of Wrapper -->
+  
+</body>
 
 </html>
